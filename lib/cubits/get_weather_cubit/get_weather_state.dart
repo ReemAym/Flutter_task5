@@ -1,0 +1,15 @@
+import 'package:weather_app/models/weather_model.dart';
+
+class WeatherState {}
+
+class NoWeatherState extends WeatherState {}
+
+class WeatherLoadedState extends WeatherState {
+  WeatherModel weatherModel;
+  WeatherLoadedState({required this.weatherModel});
+}
+
+class WeatherFailureState extends WeatherState {
+  String errMessage;
+  WeatherFailureState({required this.errMessage});
+}
