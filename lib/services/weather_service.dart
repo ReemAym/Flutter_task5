@@ -7,8 +7,8 @@ import '../models/weather_model.dart';
 class WeatherService {
   final dio;
   final String url = 'https://api.weatherapi.com/v1';
-  final String apiKey = 'ba30e323281344cb935220523242908&q';
-
+  final String apiKey = 'your api';
+ //https://www.weatherapi.com/ used site
   WeatherService({this.dio});
 
   Future<WeatherModel> getCurrentWeather({required String cityName}) async {
