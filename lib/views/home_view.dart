@@ -42,7 +42,7 @@ class HomeView extends StatelessWidget {
           } else if (state is WeatherLoadedState) {
             return WeatherInfoBody();
           } else {
-            return const Text('oops there was an error');
+           return const ErrorBody();
           }
         },
       ),
